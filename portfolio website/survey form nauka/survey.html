@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <h1 id="title">Mentoring program application form</h1>
+    <p id="description">Thank you for your time signing up to my new mentoring program</p>
+    </header>
+    <form id="survey-form" method="post" action='link'>
+      <fieldset>
+      <label for="name" id="name-label">Name
+          <input id="name" type="text" placeholder="Enter your name" required></input ></label>
+        
+        <label for="surname" id="surname-label">Surname
+          <input id="surname" type="text" placeholder="Enter your surname" required></input ></label>
+      
+      
+        <label for="email" id="email-label">Email
+          <input id="email" class="age-label" type="email" placeholder="Enter your email" required></input></label>
+      
+        <label id="number-label" for="number">Age
+        <input id="number" type="number" placeholder="Input your age" min="12" max="90" /></label>
+
+
+      </fieldset> 
+      <fieldset>
+        <p>Which area would you like to improve the most ?</p>
+          <select id="dropdown" placeholder="select an option">
+            <option disabled selected value>select option</option>
+            <option value="1">sport and health</option>
+            <option value="2">relationship</option>
+            <option value="3">financial area</option>  
+          </select>
+      </fieldset>
+      <fieldset>
+        <p>Are you an adult ?</p>
+        <label><input class="inline" type="radio" name="yes-no" value="yes" checked>yes</label>
+        <label><input class="inline" type="radio" name="yes-no" value="no">no</label>
+      </fieldset>
+      <fieldset>
+        <p>Tell us a few words about you</p>
+      <textarea id="description" rows="6" cols="30" name="description" placeholder="I like playing football and listening to.."></textarea>
+      
+      </fieldset>
+      <fieldset>
+      <p>In which country would you like to be trained ?</p>
+      <label class="checkbox" >
+      <input type="checkbox"  value="Spain"/>
+       Spain</label>
+       <label class="checkbox">
+      <input type="checkbox"  value="Italy"/>
+       Italy</label>
+       <label class="checkbox">
+      <input type="checkbox"   value="Sweden"/>
+       Sweden</label>
+       <label class="checkbox">
+      <input type="checkbox"  value="Switzerland"/>
+       Switzerland</label>
+       <label class="checkbox">
+      <input type="checkbox"  value="Poland"/>
+       Poland</label>
+       <label class="checkbox">
+      <input type="checkbox" value="France"/>
+       France</label>
+      </fieldset>
+       <input type="submit" id="submit" value="Submit"/> 
+    </form>
+    </div>
+  </body>
+</html>
